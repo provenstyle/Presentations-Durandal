@@ -1,7 +1,5 @@
-DurandalPresentation
-====================
-
 Durandal - Finally a SPA Framework that Works!
+====================
 
 I have tried several different ways to build single-page web applications over the last 3 years.  I started with iUI.  The concept was cool but I quickly ran into road blocks.  I tried jQTouch and got a little farther but again ran into road blocks.  jQueryMobile had just come out and I though finally jQuery will get it right, but I spent all of my time fighting the framework.  Then Knockout was released and it made things a lot better, but there were still issues like url routing.  I started using a library called SammyJS and that solved the routing issue.  My app was better, but I still wasn’t happy with my view models.  They were way too big. It seemed like everything was happening in the view model.  When I was finally able to get my app working I started having trouble managing all of the JavaScript dependencies and getting them loaded in the right order!  It was all just a big pain! Then along came Durandal.
 
