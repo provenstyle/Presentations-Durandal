@@ -1,5 +1,6 @@
 obj
 bin
+PublishProfiles
 _ReSharper.*
 *.csproj.user
 *.resharper.user
@@ -12,7 +13,6 @@ _ReSharper.*
 *.opensdf
 *.DotSettings.user
 OADSI.exe.config
-STS/build
 *.ncrunchsolution
 *.ncrunchproject
 *.ncrunchsolution.user
