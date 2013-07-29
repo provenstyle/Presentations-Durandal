@@ -389,7 +389,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60195</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/FlashCards</IISUrl>
+          <IISUrl>http://localhost/DurandalDemo</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
