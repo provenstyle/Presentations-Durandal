@@ -1,5 +1,5 @@
-﻿define(['durandal/app', 'services/selectedDeck', 'services/logger'],
-    function (app, deck, logger) {
+﻿define(['services/selectedDeck', 'services/logger'],
+    function (deck, logger) {
 
     var viewAttached = function() {
             window.scrollTo(0, 1);
@@ -39,7 +39,7 @@
         var random = ko.observable(false),
             randomChanged = function () {
                 logger.log("Random checkbox value: " + random());
-                app.trigger("random", random());
+                deck.pickRandom(random());
                 return true;
             };
 
