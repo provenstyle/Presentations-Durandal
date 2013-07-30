@@ -1,9 +1,33 @@
 ﻿<section>
-        
-    <!--ko compose: "viewmodels/_cardsControls"--><!--/ko-->
-     
-    <!--ko compose: "viewmodels/_cardsBody"--><!--/ko-->
+            
+    <div>
+        <button class="btn previous" data-bind="enable: hasPrevious, click: previous">Previous</button>
+        <button class="btn next" data-bind="enable: hasNext, click: next">Next</button>
+    </div> 
     
-    <!--ko compose: "viewmodels/_cardsFooter"--><!--/ko-->
+    <div class="card_content" >        
+        <span data-bind="text: cardCount"/>
+        <span class="deckName" data-bind="text: deckName"></span>
+        <div class="card" data-bind="click: flip">
+            <div class="front face">
+                <h1 data-bind="text: card().frontHeading"></h1>
+                <p data-bind="text: card().front"></p>
+            </div>
+            <div class="back face">
+                <h1 data-bind="text: card().backHeading">Capital</h1>
+                <p data-bind="text: card().back"></p>
+            </div>
+        </div>        
+    </div>    
+    
+    <div class="footer">
+        <span>* click to flip</span>
+        <span class="random">
+            <label>
+                <input type="checkbox" data-bind="checked: random, click: randomChanged" />
+                Random
+            </label>                
+        </span>
+    </div>
     
 </section>
